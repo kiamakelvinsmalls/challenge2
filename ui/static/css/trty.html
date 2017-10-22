@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Yummy Recipes </title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="shortcut icon" type="image/x-icon" href="images/logo.ico">
+	<script type="text/javascript" src="recipes.js"></script>
+</head>
+<body>
+<div id="logout">
+<form action="login.html">
+<input type="submit" value="logout">
+</form></div>
+<div id="logIn">
+<div class="logo animated bounce"><img src="images/yamm.png"></div>
+<h2 class="h2 animated shake">yummy recipes</h2>
+<div class="wrapper animated rubberBand">
+<table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
+<tr>
+<th>Name</th>
+<th>detail</th>
+<th>duration</th>
+<th>actions</th>
+</tr>
+
+<tr>
+<td><input type="text" id="new_name"></td>
+<td><input type="text" id="new_detail" ></td>
+<td><input type="time" id="new_time" ></td>
+<td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+</tr>
+
+</table>
+
+</div>
+</div>
+</body>
+</html>

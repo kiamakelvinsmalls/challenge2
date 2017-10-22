@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<div id="logIn">
+<div class="logo animated bounce"><img src="{{ url_for('static', filename='images/yamm.png') }}"></div>
+<h2 class="h2 animated shake">sign in to Yummy Recipes</h2>
+<div class="container animated rubberBand">
+<form method="POST">
+
+	<input class="text" type="text" name="username" placeholder="username">
+    <input class="text" type="password" name="password" placeholder="password">
+    <input class="button" type="submit" value="login">
+    <input class="button" type="reset">
+
+</form>
+</div>
+<div class="container animated rubberBand">
+<h3>New?<a href="register">sign up</a></h3>
+</div>
+</div>
+{% endblock %}
