@@ -33,3 +33,16 @@ function delete_row(no)
 {
  document.getElementById("row"+no+"").outerHTML="";
 }
+function save_row(no)
+{
+ var name=document.getElementById("name_text"+no).value;
+ var detail=document.getElementById("detail_text"+no).value;
+ var time=document.getElementById("time_text"+no).value;
+
+ document.getElementById("name_row"+no).innerHTML=name;
+ document.getElementById("detail_row"+no).innerHTML=detail;
+ document.getElementById("time_row"+no).innerHTML=time;
+
+ document.getElementById("edit_button"+no).style.display="block";
+ document.getElementById("save_button"+no).style.display="none";
+}
